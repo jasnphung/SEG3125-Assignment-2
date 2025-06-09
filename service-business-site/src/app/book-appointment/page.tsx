@@ -45,6 +45,21 @@ export default function BookAppointmentPage() {
                 <Form.Control type="tel" placeholder="Your phone" required pattern="\d{3}[\-]?\d{3}[\-]?\d{4}" />
               </Form.Group>
 
+              <Form.Group className="mb-3" controlId="bookName">
+                <Form.Label>Vehicle Year</Form.Label>
+                <Form.Control type="text" placeholder="Vehicle year" required />
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="bookName">
+                <Form.Label>Vehicle Make</Form.Label>
+                <Form.Control type="text" placeholder="Vehicle make" required />
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="bookName">
+                <Form.Label>Vehicle Model</Form.Label>
+                <Form.Control type="text" placeholder="Vehicle model" required />
+              </Form.Group>
+
               <Form.Group className="mb-3" controlId="bookService">
                 <Form.Label>Service</Form.Label>
                 <Form.Select required>
@@ -61,17 +76,13 @@ export default function BookAppointmentPage() {
                   <option>Exhaust System Repair</option>
                   <option>Check Light Service</option>
                   <option>Pre-Purchase Inspections</option>
+                  <option>Other</option>
                 </Form.Select>
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="bookDate">
-                <Form.Label>Preferred Date</Form.Label>
-                <Form.Control type="date" required />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="bookTime">
-                <Form.Label>Preferred Time</Form.Label>
-                <Form.Control type="time" required />
+                <Form.Label>Preferred Date and Time</Form.Label>
+                <Form.Control type="datetime-local" required />
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="bookMessage">
